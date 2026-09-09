@@ -527,11 +527,13 @@ void mousePressed(){
   } else if (estados==2){
     if(mouseX >= 100 && mouseX <= 800 &&
           mouseY >= 150 && mouseY <= 250) {
-      //adicionar alguma coisa com o codigo completo
+            estados=1;
+      
     }
     else if(mouseX >= 100 && mouseX <= 800 &&
           mouseY >= 300 && mouseY <= 400) {
             estados=1;
+            //adicionar alguma coisa com o codigo completo
   } else if (mouseX >= 100 && mouseX <= 800 &&
           mouseY >= 450 && mouseY <= 550) {
             estados=0;
