@@ -1,0 +1,49 @@
+INTEGRANTES E USUÁRIOS DO GITHUB
+
+Ana Clara Costa - @AnaCostaSilva-Dev 
+Andressa Oliveira - @aon-andressa
+Anna Loren Ramalho Silva - @lorenew01
+Gabriel Amâncio Espindola - @a2025950920-crypto
+Gabriel Moreira Freitas Primo - @GabrielMFP09
+
+HISTÓRICO DE COMMITS
+21813f3 Fix instantiation of paciente object
+9b75a39 Update VisualizadorMapaHospital.pde
+d039046 Update VisualizadorMapaHospital.pde
+7af9ad3 Refactor image variable names to PImagema
+489b79b Add files via upload
+cb14844 Update VisualizadorMapaHospital.pde
+eb0ac11 Rename acento.png to assento.png
+cecfb9b Add files via upload
+23d9232 trabaio
+acfdcde Update Paciente.java
+7fbd47a Add files via upload
+265aaba Update parede.pde
+215ccbb Add files via upload
+5ccbea7 Rename 85 Sem Título_20260909082453.png to paciente alto risco pref.png
+9eda4ad Rename 87 Sem Título_20260909082540.png to paciente com risco pref.png
+c1114da Rename 88 Sem Título_20260909082607.png to paciente sem risco pref.png
+c6c21bd Add files via upload
+a3785ce Delete removedor.pde
+18f2656 Delete medico.pde
+ca7ddb7 Delete gerador.pde
+a6ea026 Delete enfermeira.pde
+6f7ac5e Add outra-imagem.txtyes
+c3ccd94 Rename 96 Sem Título_20260908211222.png to enfermeira.png
+c2e7dc3 Rename 95 Sem Título_20260908211215.png to acento.png
+7d6b596 Rename 94 Sem Título_20260908211123.png to gerador e removedor.png
+d57325b Rename 93 Sem Título_20260908211116.png to tela d senhas.png
+e37dc68 Rename 91 Sem Título_20260908211158.png to chao.png
+ea5f0c1 Rename 90 Sem Título_20260908211138.png to parede.png
+b84c5ab Rename 89 Sem Título_20260908211206.png to medico.png
+f387cbd Rename 88 Sem Título_20260908211043.png to paciente sem risco.png
+01f3906 Rename 87 Sem Título_20260908211052.png to paciente co menos risco.png
+8274334 Rename 86 Sem Título_20260908211033.png to paciente sem identificação.png
+7326925 Add files via upload
+c523463 Rename 85 Sem Título_20260908211103.png to paciente alto risco.png
+aaebb2d ooi
+5af581f Add files via upload
+0094239 Add files via upload
+e270a15 Adiciona Arvore Manchester e Wavefront
+9320cdb Add files via upload
+30d2999 Initial commit
