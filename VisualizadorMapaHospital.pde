@@ -66,7 +66,7 @@ img10 = loadImage("gerador e removedor.png");
 img11 = loadImage("tela d senhas.png");
 img12 = loadImage("parede.png");
 img13 = loadImage("chao.png");
-img14 = loadImage("acento.png");
+img14 = loadImage("assento.png");
 
   corChao       = color(239, 229, 194); // bege
   corParede     = color(205, 164, 112); // marrom claro
