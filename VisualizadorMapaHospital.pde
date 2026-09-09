@@ -28,21 +28,20 @@ color corAssento;
 color corEnfermeiro;
 color corMedico;
 color corGrade;
-Pimagem imagem1;
-Pimagem imagem2;
-Pimagem imagem3;
-Pimagem imagem4;
-Pimagem imagem5;
-Pimagem imagem6;
-Pimagem imagem7;
-Pimagem imagem8;
-Pimagem imagem8;
-Pimagem imagem9;
-Pimagem imagem10;
-Pimagem imagem11;
-Pimagem imagem12;
-Pimagem imagem13;
-Pimagem imagem14;
+PImagem imagem1;
+PImagem imagem2;
+PImagem imagem3;
+PImagem imagem4;
+PImagem imagem5;
+PImagem imagem6;
+PImagem imagem7;
+PImagem imagem8;
+PImagem imagem9;
+PImagem imagem10;
+PImagem imagem11;
+PImagem imagem12;
+PImagem imagem13;
+PImagem imagem14;
 
 int estados=0;
 
@@ -53,20 +52,20 @@ void settings() {
 void setup() {
   surface.setTitle("Visualizador de mapa hospitalar");
 
-  img1 = loadImage("paciente sem identificação.png");
-  img2 = loadImage("paciente sem risco.png");
-img3 = loadImage("paciente com risco.png");
-img4 = loadImage("paciente alto risco.png");
-img5 = loadImage("paciente sem risco pref.png");
-img6 = loadImage("paciente com risco pref.png");
-img7 = loadImage("paciente alto risco pref.png");
-img8 = loadImage("medico.png");
-img9 = loadImage("enfermeira.png");
-img10 = loadImage("gerador e removedor.png");
-img11 = loadImage("tela d senhas.png");
-img12 = loadImage("parede.png");
-img13 = loadImage("chao.png");
-img14 = loadImage("assento.png");
+  imagem1 = loadImage("paciente sem identificação.png");
+  imagem2 = loadImage("paciente sem risco.png");
+imagem3 = loadImage("paciente com risco.png");
+imagem4 = loadImage("paciente alto risco.png");
+imagem5 = loadImage("paciente sem risco pref.png");
+imagem6 = loadImage("paciente com risco pref.png");
+imagem7 = loadImage("paciente alto risco pref.png");
+imagem8 = loadImage("medico.png");
+imagem9 = loadImage("enfermeira.png");
+imagem10 = loadImage("gerador e removedor.png");
+imagem11 = loadImage("tela d senhas.png");
+imagem12 = loadImage("parede.png");
+imagem13 = loadImage("chao.png");
+imagem14 = loadImage("assento.png");
 
   corChao       = color(239, 229, 194); // bege
   corParede     = color(205, 164, 112); // marrom claro
@@ -576,7 +575,7 @@ void definidorCelulas(char tipo,int linha, int coluna){
    celulasOrganizar[linha][coluna].definircelula(tipo);
   if(tipo=='.'){
     celulasOrganizar[linha][coluna] = new Chao(linha, coluna);
-    
+    celulasOrganizar[linha][coluna].imprimirChao();
   } else if(tipo=='#'){
     celulasOrganizar[linha][coluna] = new parede(linha, coluna);
   } else if (tipo=='G'){
@@ -591,5 +590,31 @@ void definidorCelulas(char tipo,int linha, int coluna){
     celulasOrganizar[linha][coluna] = new enfermeira(linha, coluna);
   } else if (tipo=='M'){
     celulasOrganizar[linha][coluna] = new medico(linha, coluna);
+  }
+}
+
+
+void desenharImagem(char tipo, float x, float y) {
+
+  PImage imagem = null;
+
+  if (tipo == 'G') {
+    imagem = imagem10;
+  } else if (tipo == 'R') {
+    imagem = imagem10;
+  } else if (tipo == 'A') {
+    imagem = imagem14;
+  } else if (tipo == 'E') {
+    imagem = imagem9;
+  } else if (tipo == 'M') {
+    imagem = imagem8;
+  } else if (tipo == '#') {
+    imagem = imagem12;
+  } else if (tipo == '.') {
+    imagem = imagem13;
+  }
+
+  if (imagem != null) {
+    image(imagem, x, y, tamanhoCelula, tamanhoCelula);
   }
 }
