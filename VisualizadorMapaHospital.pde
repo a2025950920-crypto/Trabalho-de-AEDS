@@ -28,6 +28,21 @@ color corAssento;
 color corEnfermeiro;
 color corMedico;
 color corGrade;
+Pimagem imagem1;
+Pimagem imagem2;
+Pimagem imagem3;
+Pimagem imagem4;
+Pimagem imagem5;
+Pimagem imagem6;
+Pimagem imagem7;
+Pimagem imagem8;
+Pimagem imagem8;
+Pimagem imagem9;
+Pimagem imagem10;
+Pimagem imagem11;
+Pimagem imagem12;
+Pimagem imagem13;
+Pimagem imagem14;
 
 int estados=0;
 
@@ -37,6 +52,21 @@ void settings() {
 
 void setup() {
   surface.setTitle("Visualizador de mapa hospitalar");
+
+  img1 = loadImage("paciente sem identificação.png");
+  img2 = loadImage("paciente sem risco.png");
+img3 = loadImage("paciente com risco.png");
+img4 = loadImage("paciente alto risco.png");
+img5 = loadImage("paciente sem risco pref.png");
+img6 = loadImage("paciente com risco pref.png");
+img7 = loadImage("paciente alto risco pref.png");
+img8 = loadImage("medico.png");
+img9 = loadImage("enfermeira.png");
+img10 = loadImage("gerador e removedor.png");
+img11 = loadImage("tela d senhas.png");
+img12 = loadImage("parede.png");
+img13 = loadImage("chao.png");
+img14 = loadImage("acento.png");
 
   corChao       = color(239, 229, 194); // bege
   corParede     = color(205, 164, 112); // marrom claro
