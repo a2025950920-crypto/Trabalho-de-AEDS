@@ -608,7 +608,9 @@ void definidorCelulas(char tipo,int linha, int coluna){
     celulasOrganizar[linha][coluna] = new enfermeira(linha, coluna);
   } else if (tipo=='M'){
     celulasOrganizar[linha][coluna] = new medico(linha, coluna);
-  }
+  } else if (tipo=='B'){
+   celulasOrganizar[linha][coluna] = new 
+}
 }
 
 
