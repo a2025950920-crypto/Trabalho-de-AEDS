@@ -145,6 +145,10 @@ void carregarMapa(String arquivo) {
         numColunas + " caracteres, mas possui " + linha.length() + ".";
       return;
     }
+stroke(corGrade);
+  strokeWeight(1);
+
+  
 
     for (int j = 0; j < numColunas; j++) {
       char tipo = linha.charAt(j);
@@ -157,6 +161,20 @@ void carregarMapa(String arquivo) {
           (i + 2) + ", coluna " + (j + 1) + ".";
         return;
       }
+for (int i = 0; i < numLinhas; i++) {
+    for (int j = 0; j < numColunas; j++) {
+      char tipo1 = mapa[i][j];
+
+      float x = origemX + j * tamanhoCelula;
+      float y = origemY + i * tamanhoCelula;
+
+      fill(corDaCelula(tipo));
+      rect(x, y, tamanhoCelula, tamanhoCelula);
+
+      // DESENHA A IMAGEM DA CÉLULA
+      desenharImagem(tipo, x, y);
+ }
+  }
 
       mapa[i][j] = tipo;
 
