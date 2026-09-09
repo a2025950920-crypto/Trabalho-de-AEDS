@@ -15,6 +15,8 @@ class Paciente extends Organizar {
   String senha;
   EstadoPaciente estado;
   char corClassificacao; // V, L, A, G, B
+  PImage imagemPaciente;
+
 
   // [0] SatO2 (70-100) | [1] Temp (34-42) | [2] Dor (0-10) | [3] Consciencia (0/1)
   float[] sinaisVitais;
@@ -32,5 +34,7 @@ class Paciente extends Organizar {
     sinaisVitais[1] = random(34.0f, 42.0f);
     sinaisVitais[2] = floor(random(0, 11));
     sinaisVitais[3] = (random(1.0f) < 0.15f) ? 1 : 0;
+    imagemPaciente = loadImage("paciente sem identificação.png");
+
   }
 }
