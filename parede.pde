@@ -7,7 +7,7 @@ class parede extends Organizar {
   }
   
 
-  void imprimirChao() {
+  void imprimirParede() {
     
     image(imagemParede, linha, coluna);
   }
