@@ -8,8 +8,6 @@ enum EstadoPaciente {
 }
 
 class Paciente extends Organizar {
-  private static int contadorGlobalID = 0;
-
   int id;
   char tipoAtendimento; // 'P' ou 'N'
   String senha;
@@ -34,7 +32,7 @@ class Paciente extends Organizar {
     sinaisVitais[1] = random(34.0f, 42.0f);
     sinaisVitais[2] = floor(random(0, 11));
     sinaisVitais[3] = (random(1.0f) < 0.15f) ? 1 : 0;
-    imagemPaciente = loadImage("paciente sem identificação.png");
+    imagemPaciente = loadImage("paciente_sem_identificacao.png");
 
   }
 }
