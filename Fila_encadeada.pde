@@ -46,4 +46,31 @@ class FilaPacientes {
   int getTamanho() {
     return tamanho;
   }
+
+  // Adicione dentro da classe FilaPacientes:
+  public NoFila getInicio() {
+    return this.inicio;
+  }
+
+  public void removerPaciente(Paciente p) {
+    if (estaVazia() || p == null) return;
+
+    if (inicio.paciente == p) {
+      inicio = inicio.proximo;
+      if (inicio == null) fim = null;
+      tamanho--;
+      return;
+    }
+
+    NoFila atual = inicio;
+    while (atual.proximo != null && atual.proximo.paciente != p) {
+      atual = atual.proximo;
+    }
+
+    if (atual.proximo != null) {
+      atual.proximo = atual.proximo.proximo;
+      if (atual.proximo == null) fim = atual;
+      tamanho--;
+    }
+  }
 }
